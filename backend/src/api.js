@@ -36,7 +36,7 @@ router.post('/register', [
         return res.status(500).send('error occoured');
       }
 
-      // generate a token with 11 min expiry and send it
+      // generate a token with 6min expiry and send it
       const data = {
         name: req.body.name,
         email: req.body.email
@@ -56,7 +56,6 @@ router.post('/submit', isAuth, (req, res) => {
     return normalize(questions.answers[key]) === normalize(req.body[key]) ? c + 1 : c;
   }, 0);
   
-  // @TODO: store submissiont timestamp also
   // store submission+score in db
   db.query(`UPDATE participants SET response=$1,score=$2,submitted_at=NOW() WHERE email=$3`,
   [JSON.stringify(req.body),count,req.token.email],
@@ -65,17 +64,6 @@ router.post('/submit', isAuth, (req, res) => {
         return res.status(500).send('Error occoured');
       }
       res.status(200).send({ message: 'Success'});
-    });
-});
-
-router.get('/result', (req, res) => {
-  // send the results back
-  db.query('SELECT * FROM  participants ORDER BY score DESC',
-    (error, results) => {
-      if (error) {
-        return res.status(500).send('error occoured');
-      }
-      return res.status(200).json(results.rows);
     });
 });
 
