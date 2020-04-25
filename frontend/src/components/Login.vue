@@ -161,7 +161,7 @@ export default {
         .then(res => {
           this.onLogin(res.token, res.questions);
         })
-        .catch(error => {
+        .catch(() => {
           // display errros
           this.setLoading(false);
           this.error = 'Error: Invalid details';
