@@ -8,7 +8,7 @@ const csv = require('csv-parser');
 const fs = require('fs');
 
 
-const sendMail = async (email, variables) => {
+const sendMail = (email, variables) => {
   var data = {
     from: 'IAS IEEE <noreply@email.nitcieee.tech>',
     to: email,
@@ -20,7 +20,7 @@ const sendMail = async (email, variables) => {
     console.log(`Email sent to ${email}`)
   });
 }
-const pendingEmails = [];
+
 fs.createReadStream('output.csv')
   .pipe(csv())
   .on('data', (row) => {
