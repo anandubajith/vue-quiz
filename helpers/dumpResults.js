@@ -1,16 +1,37 @@
-const { Pool } = require('pg');
 require('dotenv').config();
+// Setup DB
+const { Pool } = require('pg');
 const parseDbUrl = require("parse-database-url");
+const credentials = parseDbUrl(process.env.DATABASE_URL);
+// workaround to connect to heroku
+credentials.ssl = { rejectUnauthorized: false}
+const pool = new Pool(credentials);
 
-const pool = new Pool(parseDbUrl(process.env.DATABASE_URL));
+
+// CSV writing part
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+const csvWriter = createCsvWriter({
+  path: './output.csv',
+  header: [
+      {id: 'name', title: 'Name'},
+      {id: 'phone', title: 'Phone'},
+      {id: 'email', title: 'Email'},
+      {id: 'created_at', title: 'Created at'},
+      {id: 'member', title: 'IEEE Member'},
+      {id: 'score', title: 'Final score'},
+      {id: 'submitted_at', title: 'Submitted at'},
+  ]
+});
 
 
 //  query pool and return data
 
-pool.query('SELECT * FROM  participants ORDER BY score DESC',
-(error, results) => {
+pool.query('SELECT name,email,phone,created_at,member, score, submitted_at FROM  participants ORDER BY score DESC', (error, results) => {
   if (error) {
     return console.log(error);
   }
-  return console.log(results.rows);
+  csvWriter.writeRecords(results.rows)
+    .then(() => {
+        console.log('wrote to output.csv');
+    });
 });
