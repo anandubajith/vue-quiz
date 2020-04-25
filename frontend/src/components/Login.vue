@@ -164,7 +164,7 @@ export default {
         .catch(error => {
           // display errros
           this.setLoading(false);
-          this.error = error;
+          this.error = 'Error: Invalid details';
         });
     },
     validate() {
