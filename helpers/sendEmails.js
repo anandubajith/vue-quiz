@@ -1,12 +1,11 @@
-const api_key = 'key-64c28ab14a500adb8fec86ffa0a01354';
-const domain = 'email.nitcieee.tech';
-const mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+require('dotenv').config();
+const mailgun = require('mailgun-js')({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN});
+// required for rendering the template
 const nunjucks = require('nunjucks');
-
 nunjucks.configure('.', { autoescape: true });
 
 const sendMail = (email, variables) => {
-  console.log('Sending Email');
+  console.log(`Sending email to ${email}`);
 
   var data = {
     from: 'IAS IEEE <noreply@email.nitcieee.tech>',
@@ -20,5 +19,3 @@ const sendMail = (email, variables) => {
   });
 
 }
-
-module.exports = sendMail;
