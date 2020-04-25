@@ -16,10 +16,10 @@ const csvWriter = createCsvWriter({
       {id: 'name', title: 'Name'},
       {id: 'phone', title: 'Phone'},
       {id: 'email', title: 'Email'},
-      {id: 'created_at', title: 'Created at'},
-      {id: 'member', title: 'IEEE Member'},
-      {id: 'score', title: 'Final score'},
-      {id: 'submitted_at', title: 'Submitted at'},
+      {id: 'created_at', title: 'Created_at'},
+      {id: 'member', title: 'IEEE_Member'},
+      {id: 'score', title: 'Final_score'},
+      {id: 'submitted_at', title: 'Submitted_at'},
   ]
 });
 

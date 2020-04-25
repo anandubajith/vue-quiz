@@ -3,10 +3,12 @@ const mailgun = require('mailgun-js')({apiKey: process.env.MAILGUN_API_KEY, doma
 // required for rendering the template
 const nunjucks = require('nunjucks');
 nunjucks.configure('.', { autoescape: true });
+// required for reading the output.csv and sending emails
+const csv = require('csv-parser');
+const fs = require('fs');
 
-const sendMail = (email, variables) => {
-  console.log(`Sending email to ${email}`);
 
+const sendMail = async (email, variables) => {
   var data = {
     from: 'IAS IEEE <noreply@email.nitcieee.tech>',
     to: email,
@@ -15,7 +17,16 @@ const sendMail = (email, variables) => {
   };
 
   mailgun.messages().send(data, function (error, body) {
-    console.log(body);
+    console.log(`Email sent to ${email}`)
   });
-
 }
+const pendingEmails = [];
+fs.createReadStream('output.csv')
+  .pipe(csv())
+  .on('data', (row) => {
+    console.log(`Sending email to ${row["Email"]} with score ${row["Final_score"]}`);
+    pendingEmails.push(sendMail(row["Email"], { correctCount: row["Final_score"] }));
+  })
+  .on('end', () => {
+      console.log('Successsfully Completed')
+  });
