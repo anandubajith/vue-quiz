@@ -1,0 +1,201 @@
+{
+  "questions": {
+    "1": {
+      "question": "What is the scientific name of CoronaVirus?",
+      "options": [
+        "MERS",
+        "SARS",
+        "SARS-CoV-2",
+        "EBOV"
+      ]
+    },
+    "2": {
+      "question": "Who coined the name of SARS-CoV-2, the virus which causes Covid-19?",
+      "options": [
+        "WHO",
+        "UN",
+        "ICTV",
+        "IUPAC"
+      ]
+    },
+    "3": {
+      "question": "Alcholic sanitiser typically contains mixtures of isopropyl alcohol and ethanol. Which of the following is the main ingredient of Non-Alcoholic sanitiser?",
+      "options": [
+        "n-propanol",
+        "BZK/TCS",
+        "Anionic surfactants and phosphonic acid",
+        "Glycerin"
+      ]
+    },
+    "4": {
+      "question": "What are the symptoms of CoronaVirus?",
+      "options": [
+        "Fever, Tiredness",
+        "Dry Cough",
+        "No symptoms",
+        "All of the above"
+      ]
+    },
+    "5": {
+      "question": "What is the Mortality Rate of CoronaVirus as disclosed by WHO in March ?",
+      "options": [
+        "2%",
+        " 1.76%",
+        "56%",
+        "3.4%"
+      ]
+    },
+    "6": {
+      "question": "What is the incubation period ( the time between exposure to the virus and onset of symptoms) of CoronaVirus?",
+      "options": [
+        "13 days",
+        "1 month",
+        "14 days",
+        "7 days"
+      ]
+    },
+    "7": {
+      "question": "What is a Fomite?",
+      "options": [
+        "A hospital grade disinfectant",
+        "A contaminated object or surface",
+        "A disease carrier",
+        "An immunity boosting equipment"
+      ]
+    },
+    "8": {
+      "question": "Which of the following drugs have been prescribed by WHO for treatment of COVID-19?",
+      "options": [
+        "Hydroxy chloroquine",
+        "Favipiravir",
+        "Remdesivir",
+        "None of these"
+      ]
+    },
+    "9": {
+      "question": "What is the mode of transmission of Coronavirus?",
+      "options": [
+        "through close and direct physical contact with infected bodily fluids, the most infectious being blood, faeces and vomit",
+        "via small respiratory droplets through sneezing, coughing, or when people interact with each other for some time in close proximity",
+        "Airborne Transmission",
+        "When an infected animal bites or scratches you or when you handle animal waste."
+      ]
+    },
+    "10": {
+      "question": "Thermal sensors are being used to identify the temperature of a person to indicate fever symptoms. Which of the following is used in these?",
+      "options": [
+        "Thermistor",
+        "Platinum Resistance Thermometer( PRT)",
+        "Infrared sensors",
+        "Thermal radiation sensors"
+      ]
+    },
+    "11": {
+      "question": "What is the infectious time of a CoronaVirus Patient? (Time in which disease can spread from the infected to others)",
+      "options": [
+        "Throughout the incubation and treatment time",
+        "Two days prior to the onset of symptoms and the symptomatic period",
+        "Before the symptomatic period",
+        "None of the above"
+      ]
+    },
+    "12": {
+      "question": "What is the kind of treatment given to CoronaVirus Patients?",
+      "options": [
+        "Vaccine targeted to destroy the Virus",
+        "Supportive Care i.e help to keep the vital organ systems functioning",
+        "Preventative Care",
+        "Immunotherapy "
+      ]
+    },
+    "13": {
+      "question": "What type of mask is worn by Doctors and other healthcare workers treating corona virus patients?",
+      "options": [
+        "HoneyWell respirators",
+        "N95 masks",
+        "Surgical Masks",
+        "FFP1 masks"
+      ]
+    },
+    "14": {
+      "question": "Advanced face masks with anti-pathogen anti bacterial fabric consists of",
+      "options": [
+        "Triple layered surgical mask",
+        "Metal oxide nanoparticles",
+        "N-95 face masks",
+        "Respirators"
+      ]
+    },
+    "15": {
+      "question": "Which of the following technologies were used by the company bluedot to track the epidemic?",
+      "options": [
+        "Block chain",
+        "Artificial Intelligence",
+        "Chat Bots and Robots",
+        "Drones and heat sensors"
+      ]
+    },
+    "16": {
+      "question": "What shouldn’t be done while handling a mask?",
+      "options": [
+        "Keep the colored part of the mask outwards",
+        "Remove the mask from behind",
+        "Discard of the mask after use and clean hands ",
+        "Remove the mask from front in case of talking to someone"
+      ]
+    },
+    "17": {
+      "question": "Which of the following is not a feature of Stage 3 of a global Pandemic?",
+      "options": [
+        "The source of the infection becomes untraceable.",
+        "People without travel history get infected.",
+        "The spread becomes uncontrollable and major clusters of infection are formed.",
+        "Geographical lockdown is implemented."
+      ]
+    },
+    "18": {
+      "question": "RT-PCR test can be done on respiratory samples.The RT-PCR test performed with throat swabs is only reliable in the first week of the disease. Later on the virus can disappear in the throat while it continues to multiply in the lungs. What is the full form of RT PCR?",
+      "options": []
+    },
+    "19": {
+      "question": "Ro or reproductive factor for corona is estimated to be between 1.5-3.5, What is reproductive factor?",
+      "options": [
+        "The number of cases, on average, a viral strand will cause during its infectious period",
+        "The number of days in which an infected person will show symptoms ",
+        "The number of cases, on average, an infected person will cause during their infectious period.",
+        "The number of protein strands required, on average, for the corona virus to reproduce in the host body"
+      ]
+    },
+    "20": {
+      "question": "What is the most probable source of CoronaVirus?",
+      "options": [
+        "Wild Fruits",
+        "Bats",
+        "Man Made",
+        "Rats"
+      ]
+    }
+  },
+  "answers": {
+    "1": "SARS-CoV-2",
+    "2": "ICTV",
+    "3": "BZK/TCS",
+    "4": "All of the above",
+    "5": "3.4%",
+    "6": "14 days",
+    "7": "A contaminated object or surface",
+    "8": "None of these",
+    "9": "via small respiratory droplets through sneezing, coughing, or when people interact with each other for some time in close proximity",
+    "10": "Infrared sensors",
+    "11": "Two days prior to the onset of symptoms and the symptomatic period",
+    "12": "Supportive Care i.e help to keep the vital organ systems functioning",
+    "13": "N95 masks",
+    "14": "Metal oxide nanoparticles",
+    "15": "Artificial Intelligence",
+    "16": "Remove the mask from front in case of talking to someone",
+    "17": "The spread becomes uncontrollable and major clusters of infection are formed.",
+    "18": "Reverse Transcription Polymerase Chain Reaction",
+    "19": "The number of cases, on average, an infected person will cause during their infectious period.",
+    "20": "Bats"
+  }
+}

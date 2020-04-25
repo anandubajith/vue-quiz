@@ -1,0 +1,23 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5hbmR1IEIgQWppdGgiLCJlbWFpbCI6Im1haWwyMTIxMUBhbmFuZHUubmV0IiwiaWF0IjoxNTg3Nzg0OTI2LCJleHAiOjE1ODc3ODUyODZ9.lSgpbDhwAlx4tuJtY3Y30VWQm6geT0sE5DWX7HEItUk
+###
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+  "name": "Anandu B Ajith",
+  "email": "mail21211@anandu.net",
+  "phone": "+919497389759",
+  "member": true
+}
+
+###
+POST http://localhost:5000/api/submit
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "1": "SARS-CoV-2",
+  "2": "answer2"
+}
+###
+GET http://localhost:5000/api/result
