@@ -55,13 +55,15 @@ router.post('/submit', isAuth, (req, res) => {
   const count = Object.keys(req.body).reduce((c, key) => {
     return normalize(questions.answers[key]) === normalize(req.body[key]) ? c + 1 : c;
   }, 0);
-  
+ 
+    console.log(req.token.email, req.body);
+
   // store submission+score in db
   db.query(`UPDATE participants SET response=$1,score=$2,submitted_at=NOW() WHERE email=$3`,
   [JSON.stringify(req.body),count,req.token.email],
     (error, results) => {
       if (error) {
-          console.log(error);
+        console.error(error);
         return res.status(500).send('Error occoured');
       }
       res.status(200).send({ message: 'Success'});
