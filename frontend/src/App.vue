@@ -228,7 +228,7 @@ export default {
     },
     submitAnswers() {
       this.loading = true;
-      fetch("https://boiling-crag-82981.herokuapp.com/api/submit", {
+      fetch("https://quiz-nitcieee.herokuapp.com/api/submit", {
         method: "POST",
         headers: {
           Accept: "application/json",

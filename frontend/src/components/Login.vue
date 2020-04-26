@@ -138,7 +138,7 @@ export default {
         return;
       }
       this.setLoading(true);
-      fetch("https://boiling-crag-82981.herokuapp.com/api/register", {
+      fetch("https://quiz-nitcieee.herokuapp.com/api/register", {
         method: "POST",
         headers: {
           Accept: "application/json",
