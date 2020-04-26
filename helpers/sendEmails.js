@@ -25,7 +25,7 @@ fs.createReadStream('output.csv')
   .pipe(csv())
   .on('data', (row) => {
     console.log(`Sending email to ${row["Email"]} with score ${row["Final_score"]}`);
-    pendingEmails.push(sendMail(row["Email"], { correctCount: row["Final_score"] }));
+    sendMail(row["Email"], { correctCount: row["Final_score"] });
   })
   .on('end', () => {
       console.log('Successsfully Completed')
