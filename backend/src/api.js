@@ -6,7 +6,11 @@ const db = require('./db');
 const { isAuth } = require('./middlewares');
 
 const questions = require('./questions.json');
-const normalize = (str) => str.toLowerCase().replace(' ', '');
+const normalize = (str) => {
+    if ( str == null ) {
+        return "";
+    return str.toLowerCase().replace(' ', '');
+}
 
 
 const router = express.Router();
