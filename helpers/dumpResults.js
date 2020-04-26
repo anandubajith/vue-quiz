@@ -26,12 +26,13 @@ const csvWriter = createCsvWriter({
 
 //  query pool and return data
 
-pool.query('SELECT name,email,phone,created_at,member, score, submitted_at FROM  participants ORDER BY score DESC', (error, results) => {
-  if (error) {
-    return console.log(error);
-  }
-  csvWriter.writeRecords(results.rows)
-    .then(() => {
-        console.log('wrote to output.csv');
-    });
-});
+pool
+    .query(`SELECT name,email,phone,created_at,member,score,submitted_at FROM participants
+                            ORDER BY score DESC`)
+    .then(res => res.rows)
+    .then(rows => csvWriter.writeRecords(rows))
+    .then(console.log('Wrote to output.csv'))
+    .then(pool.end())
+    .catch(err => console.error('Error', err.stack));
+
+
