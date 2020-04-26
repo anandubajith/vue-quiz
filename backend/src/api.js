@@ -9,6 +9,7 @@ const questions = require('./questions.json');
 const normalize = (str) => {
     if ( str == null ) {
         return "";
+    }
     return str.toLowerCase().replace(' ', '');
 }
 
