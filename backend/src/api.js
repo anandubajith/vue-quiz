@@ -61,6 +61,7 @@ router.post('/submit', isAuth, (req, res) => {
   [JSON.stringify(req.body),count,req.token.email],
     (error, results) => {
       if (error) {
+          console.log(error);
         return res.status(500).send('Error occoured');
       }
       res.status(200).send({ message: 'Success'});
