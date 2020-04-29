@@ -5,6 +5,7 @@
       <img src="./assets/ieee.png" style="height:50px;margin-right:0.5rem" />
       <img src="./assets/ias-logo-lg.png" style="height:60px;" />
     </header>
+    <div v-if="quizActive">
     <Login v-if="token==null && !this.success" :setLoading="setLoading" :onLogin="onLogin" />
     <Timer :submitAnswers="submitAnswers" v-if="token !== null && !this.success" />
     <Question
@@ -32,6 +33,12 @@
       <div class="lds-dual-ring"></div>
     </div>
   </div>
+  <div style="text-align:center" v-else>
+      <h1 style="margin-top:1rem">Corona Quiz</h1>
+      <p style="font-size:1.25rem; color:#fff"> The quiz is over now </p>
+  </div>
+  </div>
+
 </template>
 <style>
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -213,7 +220,8 @@ export default {
       success: false,
       questionId: null,
       response: {},
-      loading: false
+      loading: false,
+      quizActive: false,
     };
   },
   methods: {
