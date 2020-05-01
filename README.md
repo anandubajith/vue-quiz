@@ -2,10 +2,10 @@
 
 A simple quiz app built with VueJS , Express and PostgreSQL for database.
 
-## TODO
 
-- handle email scripting
-- handle submit failing
+
+
+
 
 ## Screenshots
 
