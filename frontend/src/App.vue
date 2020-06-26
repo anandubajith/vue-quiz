@@ -13,7 +13,7 @@
       :count="count"
       :questionId="questionId"
       :onAnswer="onAnswer"
-      v-if="token !== null && this.count <= 20 && !this.success"
+      v-if="token !== null && this.count <= 25 && !this.success"
     />
     <div v-if="this.success">
       <h1 style="margin-top:1rem">Some Quiz</h1>
