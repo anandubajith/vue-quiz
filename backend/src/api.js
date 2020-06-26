@@ -39,7 +39,7 @@ router.post('/register', [
 
     let verifyRequest = await fetch(verifyUrl, { method: 'POST' });
     let verifyResponse = await verifyRequest.json();
-    console.log(verifyRequest);
+    console.log(verifyResponse);
     if ( !verifyResponse.success) {
       throw new Error('Invalid captcha');
     }
