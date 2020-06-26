@@ -9,14 +9,14 @@
       >Note: Only NIT-Cians are eligible for prizes</span>
     </p>
 
-    <form autocomplete="off2">
-      <input type="text" v-model="name" placeholder="name" autocomplete="off" required />
-      <input type="email" v-model="email" placeholder="email" autocomplete="off" required />
+    <form autocomplete="off">
+      <input type="text" v-model="name" placeholder="name" autocomplete="new-name" required />
+      <input type="email" v-model="email" placeholder="email" autocomplete="new-email" required />
       <input
         type="text"
         v-model="phone"
         inputmode="numeric"
-        autocomplete="off"
+        autocomplete="new-phone"
         pattern="[0-9]*"
         placeholder="phone"
       />
