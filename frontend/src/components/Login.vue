@@ -20,9 +20,16 @@
         pattern="[0-9]*"
         placeholder="phone"
       />
-      <div class="check">
-        <input type="checkbox" v-model="member" id="member" />
-        <label for="member">I am an IEEE member</label>
+      <div class="radio-outer">
+        <label for="member" style="flex:1">Are you an IEEE Member?</label>
+        <div class="radio-inner">
+          <input type="radio" v-model="member" value="yes" id="yes" name="member" />
+          <label for="yes">Yes</label>
+        </div>
+        <div class="radio-inner">
+          <input type="radio" v-model="member" value="no" id="no" name="member" />
+          <label for="no">No</label>
+        </div>
       </div>
       <button type="submit">Start Quiz</button>
     </form>
@@ -66,66 +73,26 @@ p {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
-.check {
+.radio-outer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.radio-outer label {
   font-size: 1.25rem;
-  text-align: center;
   color: #959ec5;
-  margin: 0.25rem 0;
 }
-input[type="checkbox"],
-input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-  max-width: 20px;
+.radio-inner {
+  display: flex;
+  /* background: red; */
+  align-items: center;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  margin: 0 0.25rem;
 }
-label {
-  position: relative;
-  display: inline-block;
-  padding: 0 0 0 2em;
-  height: 1.5em;
-  line-height: 1.5;
-  cursor: pointer;
-}
-label::before,
-label::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 1.5em;
-  height: 1.5em;
-}
-label::before {
-  content: " ";
-  border: 2px solid #bdc3c7;
-  border-radius: 20%;
-}
-/* Checkbox */
-input[type="checkbox"] + label::after {
-  content: "\2714";
-  color: #2c3e50;
-  line-height: 1.5;
-  text-align: center;
-}
-input[type="checkbox"]:checked + label::before,
-input[type="radio"]:checked + label::before {
-  background: #fff;
-  border-color: #fff;
-}
-input[type="checkbox"] + label::after,
-input[type="radio"] + label::after {
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-}
-input[type="checkbox"]:checked + label::after,
-input[type="radio"]:checked + label::after {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+.radio-inner input {
+  margin-right: 0.25rem;
+  width: auto;
 }
 </style>
 <script>
@@ -166,7 +133,7 @@ export default {
           name: this.name,
           email: this.email,
           phone: this.phone,
-          member: this.member,
+          member: this.member === "yes",
           token: this.token
         })
       })
