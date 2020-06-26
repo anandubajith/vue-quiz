@@ -2,7 +2,7 @@
   <div>
     <header>
       <b>Question {{count}}</b>
-      <span>/20</span>
+      <span>/25</span>
     </header>
     <h1>{{question.question }}</h1>
     <div v-if="question.options.length == 0">
