@@ -87,7 +87,7 @@ p {
   /* background: red; */
   align-items: center;
   font-size: 1.25rem;
-  padding: 0.25rem;
+  padding: 0.5rem;
   margin: 0 0.25rem;
 }
 .radio-inner input {
