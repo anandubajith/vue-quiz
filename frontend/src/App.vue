@@ -278,7 +278,7 @@ export default {
     },
     onAnswer(id, answer) {
       this.response[id] = answer;
-      if (this.count >= 20) {
+      if (this.count >= 25) {
         this.submitAnswers();
         return;
       }
