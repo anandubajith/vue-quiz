@@ -41,7 +41,7 @@ router.post('/register', [
     let verifyResponse = await verifyRequest.json();
 
     // store the details in DB
-    await db.query('INSERT INTO participants(name,email,phone,member,created_at, spam_score) VALUES($1, $2, $3, $4,NOW())',
+    await db.query('INSERT INTO participants(name,email,phone,member,created_at, spam_score) VALUES($1, $2, $3, $4,NOW(), $5)',
       [req.body.name, req.body.email, req.body.phone, req.body.member, verifyResponse.score]);
     
     // generate a token with 6min expiry and send it
