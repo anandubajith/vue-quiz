@@ -195,6 +195,7 @@ button {
     transform: rotate(360deg);
   }
 }
+.grecaptcha-badge { visibility: hidden; }
 </style>
 <script>
 import Login from "./components/Login.vue";
@@ -220,9 +221,12 @@ export default {
       success: false,
       questionId: null,
       response: {},
-      loading: false,
-      quizActive: false,
+      loading: true,
+      quizActive: true,
     };
+  },
+  mounted() {
+    this.$recaptchaLoaded().then(() => this.loading = false)
   },
   methods: {
     onLogin(token, questions) {

@@ -1,5 +1,5 @@
 <template>
-  <div class="login" @submit.prevent="doLogin()">
+  <div class="login" @submit.prevent="recaptcha">
     <h1>Corona Quiz</h1>
     <p>Please note that this is a timed quiz. You will get 5 min to attempt 20 questions. Enter the following details. You will be mailed with your score and answers later.</p>
     <form autocomplete="off" >
@@ -9,7 +9,7 @@
       <div class="check">
         <input type="checkbox" v-model="member" id="member"><label for="member">I am an IEEE member</label>
       </div>
-      <button type="submit">Start Quiz</button>
+      <button type="submit" >Start Quiz</button>
     </form>
     <div v-if="error" class="errors">
       {{ error }}
@@ -133,12 +133,20 @@ export default {
     };
   },
   methods: {
+    async recaptcha() {
+      this.setLoading(true);
+      await this.$recaptchaLoaded()
+      // Execute reCAPTCHA with action "login".
+      this.token  = await this.$recaptcha('login');
+      this.doLogin();
+ 
+      // Do stuff with the received token.
+    },
     doLogin() {
       if ( !this.validate() ) {
         return;
       }
-      this.setLoading(true);
-      fetch("https://quiz-nitcieee.herokuapp.com/api/register", {
+      fetch("http://localhost:5000/api/register", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -148,7 +156,8 @@ export default {
           name: this.name,
           email: this.email,
           phone: this.phone,
-          member: this.member
+          member: this.member,
+          token: this.token
         })
       })
         .then(response => {
