@@ -53,7 +53,7 @@ router.post('/register', [
       name: req.body.name,
       email: req.body.email
     };
-    const expiration = '6min';
+    const expiration = '12min';
     const token = jwt.sign(data, process.env.SECRET, { expiresIn: expiration });
     // do shuffling of questions, options
     res.json({ questions: questions.questions, token });

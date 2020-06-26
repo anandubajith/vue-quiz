@@ -1,201 +1,256 @@
 {
   "questions": {
     "1": {
-      "question": "What is the scientific name of CoronaVirus?",
+      "question": "It is a mediated environment which creates the sensation in a user of being present in a (physical) surrounding",
       "options": [
-        "MERS",
-        "SARS",
-        "SARS-CoV-2",
-        "EBOV"
+        "WWW",
+        "VR",
+        "HMD",
+        "AR"
       ]
     },
     "2": {
-      "question": "Who coined the name of SARS-CoV-2, the virus which causes Covid-19?",
+      "question": "A type of VR environment in which subjects are visually isolated from the real environment.",
       "options": [
-        "WHO",
-        "UN",
-        "ICTV",
-        "IUPAC"
+        "IMMERSIVE",
+        "SEMI IMMERSIVE",
+        "AUGMENTED",
+        "NON IMMERSIVE"
       ]
     },
     "3": {
-      "question": "Alcholic sanitiser typically contains mixtures of isopropyl alcohol and ethanol. Which of the following is the main ingredient of Non-Alcoholic sanitiser?",
+      "question": "A term for Illusion of immersion by projecting stereo images on the walls and floor of a room.",
       "options": [
-        "n-propanol",
-        "BZK/TCS",
-        "Anionic surfactants and phosphonic acid",
-        "Glycerin"
+        "CAVE",
+        "BOOM",
+        "GUI",
+        "HMD"
       ]
     },
     "4": {
-      "question": "What are the symptoms of CoronaVirus?",
+      "question": "In this type of VR environment, the three-dimensional scene is considered as a part of the physical environment.",
       "options": [
-        "Fever, Tiredness",
-        "Dry Cough",
-        "No symptoms",
-        "All of the above"
+        "IMMERSIVE",
+        "SEMI IMMERSIVE",
+        "AUGMENTED",
+        "NON IMMERSIVE"
       ]
     },
     "5": {
-      "question": "What is the Mortality Rate of CoronaVirus as disclosed by WHO in March ?",
+      "question": "A term to describe the extent to which a user can modify form and content of a mediated environment.",
       "options": [
-        "2%",
-        " 1.76%",
-        "56%",
-        "3.4%"
+        "Vividness",
+        "Richness",
+        "Interactivity",
+        "Mapping"
       ]
     },
     "6": {
-      "question": "What is the incubation period ( the time between exposure to the virus and onset of symptoms) of CoronaVirus?",
+      "question": "HMD stands for?",
       "options": [
-        "13 days",
-        "1 month",
-        "14 days",
-        "7 days"
+        "Head Mounted Display",
+        "Head Mounted Detection",
+        "Head Made Display",
+        "Head Masked Display"
       ]
     },
     "7": {
-      "question": "What is a Fomite?",
+      "question": "In immersive technology, what does MR stand for?",
       "options": [
-        "A hospital grade disinfectant",
-        "A contaminated object or surface",
-        "A disease carrier",
-        "An immunity boosting equipment"
+        "Mixed reality",
+        "Measured reality",
+        "Mirrored reality",
+        "Meta reality"
       ]
     },
     "8": {
-      "question": "Which of the following drugs have been prescribed by WHO for treatment of COVID-19?",
+      "question": "In this type of VR environment, the subjects can perform both in the real and virtual environment.",
       "options": [
-        "Hydroxy chloroquine",
-        "Favipiravir",
-        "Remdesivir",
-        "None of these"
+        "IMMERSIVE",
+        "SEMI IMMERSIVE",
+        "AUGMENTED",
+        "NON IMMERSIVE"
       ]
     },
     "9": {
-      "question": "What is the mode of transmission of Coronavirus?",
+      "question": "BOOM stands for?",
       "options": [
-        "through close and direct physical contact with infected bodily fluids, the most infectious being blood, faeces and vomit",
-        "via small respiratory droplets through sneezing, coughing, or when people interact with each other for some time in close proximity",
-        "Airborne Transmission",
-        "When an infected animal bites or scratches you or when you handle animal waste."
+        "Binocular Omni-Orientation Manager",
+        "Binary Omni-Orientation Manager",
+        "Binocular Omni-Orientation Monitor",
+        "Binary Omni-Orientation Monitor"
       ]
     },
     "10": {
-      "question": "Thermal sensors are being used to identify the temperature of a person to indicate fever symptoms. Which of the following is used in these?",
+      "question": "_____ keep track of position.",
       "options": [
-        "Thermistor",
-        "Platinum Resistance Thermometer( PRT)",
-        "Infrared sensors",
-        "Thermal radiation sensors"
+        "Motion analyzers",
+        "Motion Trackers",
+        "HMD",
+        "SMD"
       ]
     },
     "11": {
-      "question": "What is the infectious time of a CoronaVirus Patient? (Time in which disease can spread from the infected to others)",
+      "question": "The nation’s power grid is currently undergoing s major transformation. Which of these is not a new technology being used on the grid?",
       "options": [
-        "Throughout the incubation and treatment time",
-        "Two days prior to the onset of symptoms and the symptomatic period",
-        "Before the symptomatic period",
-        "None of the above"
+        "Synchro phasors",
+        "Energy Storage",
+        "Smart meters",
+        "Flux Capacitors"
       ]
     },
     "12": {
-      "question": "What is the kind of treatment given to CoronaVirus Patients?",
+      "question": "Proof of Stake in Blockchain is _____",
       "options": [
-        "Vaccine targeted to destroy the Virus",
-        "Supportive Care i.e help to keep the vital organ systems functioning",
-        "Preventative Care",
-        "Immunotherapy "
+        "A certificate needed to use Blockchain",
+        "A password needed to access an exchange",
+        "How private keys are made",
+        "A transaction and block verification protocol "
       ]
     },
     "13": {
-      "question": "What type of mask is worn by Doctors and other healthcare workers treating corona virus patients?",
+      "question": "What is the term when a blockchain splits?",
       "options": [
-        "HoneyWell respirators",
-        "N95 masks",
-        "Surgical Masks",
-        "FFP1 masks"
+        "Fork",
+        "Merger",
+        "Sidechain",
+        "Division"
       ]
     },
     "14": {
-      "question": "Advanced face masks with anti-pathogen anti bacterial fabric consists of",
+      "question": "Who created Bitcoin?",
       "options": [
-        "Triple layered surgical mask",
-        "Metal oxide nanoparticles",
-        "N-95 face masks",
-        "Respirators"
+        "Sathoshi Nakamoto",
+        "Dave Kleiman",
+        "Craig Wright",
+        "John Mcafee"
       ]
     },
     "15": {
-      "question": "Which of the following technologies were used by the company bluedot to track the epidemic?",
+      "question": "MQTT is _____ protocol.",
       "options": [
-        "Block chain",
-        "Artificial Intelligence",
-        "Chat Bots and Robots",
-        "Drones and heat sensors"
+        "Machine to Machine",
+        "Internet of Things",
+        "Machine to Machine and Internet of Things connectivity",
+        "Machine Things"
       ]
     },
     "16": {
-      "question": "What shouldn’t be done while handling a mask?",
+      "question": "In the context of 4G wireless technology, LTE stands for",
       "options": [
-        "Keep the colored part of the mask outwards",
-        "Remove the mask from behind",
-        "Discard of the mask after use and clean hands ",
-        "Remove the mask from front in case of talking to someone"
+        "Long Term Edge",
+        "Long Term Evolution",
+        "Light Transmitter Emitter",
+        "Light Technology Era"
       ]
     },
     "17": {
-      "question": "Which of the following is not a feature of Stage 3 of a global Pandemic?",
+      "question": "Which among the following used Augmented Reality as a navigation tool in 1990s?",
       "options": [
-        "The source of the infection becomes untraceable.",
-        "People without travel history get infected.",
-        "The spread becomes uncontrollable and major clusters of infection are formed.",
-        "Geographical lockdown is implemented."
+        "NASA",
+        "British Royal Navy",
+        "United State Air Force",
+        "MI6"
       ]
     },
     "18": {
-      "question": "RT-PCR test can be done on respiratory samples.The RT-PCR test performed with throat swabs is only reliable in the first week of the disease. Later on the virus can disappear in the throat while it continues to multiply in the lungs. What is the full form of RT PCR?",
-      "options": []
+      "question": "In immersive technology, what does MR stand for?",
+      "options": [
+        "Mixed Reality",
+        "Measured Reality",
+        "Micro Reality",
+        "Mirrored Reality"
+      ]
     },
     "19": {
-      "question": "Ro or reproductive factor for corona is estimated to be between 1.5-3.5, What is reproductive factor?",
+      "question": "What popular game was intended to increase mouse proficiency?",
       "options": [
-        "The number of cases, on average, a viral strand will cause during its infectious period",
-        "The number of days in which an infected person will show symptoms ",
-        "The number of cases, on average, an infected person will cause during their infectious period.",
-        "The number of protein strands required, on average, for the corona virus to reproduce in the host body"
+        "Solitaire",
+        "Mario",
+        "Pinball",
+        "Minecraft"
       ]
     },
     "20": {
-      "question": "What is the most probable source of CoronaVirus?",
+      "question": "Which definition best fits Augmented Reality?",
       "options": [
-        "Wild Fruits",
-        "Bats",
-        "Man Made",
-        "Rats"
+        "Technology that turns physical objects to digital objects",
+        "Technology that overlays digital information on top of real-world items",
+        "Technology that completely immerses users in a new digital environment",
+        "Technology that can achieve a human level understanding of images"
+      ]
+    },
+    "21": {
+      "question": "A game based on which animated franchise propelled AR into the mainstream in these years",
+      "options": [
+        "Pokémon Go",
+        "Super Mario",
+        "Legend of Zelda",
+        "Sonic the Hedgehog"
+      ]
+    },
+    "22": {
+      "question": "The Trusted Platform Module (TPM)",
+      "options": [
+        "Provides cryptographic services in hardware instead of software",
+        "Includes a Pseudorandom Number Generator (PRNG)",
+        "Allows the user to boot a corrupted disk and repair it",
+        "Is available in Windows computers running BitLocker"
+      ]
+    },
+    "23": {
+      "question": "With respect to computer file system, a set of permissions attached to an object is",
+      "options": [
+        "Subject Access Entity (SAE)",
+        "Object Modifier",
+        "Access Control List (ACL)",
+        "Security Entry Designator"
+      ]
+    },
+    "24": {
+      "question": "Biometrics related to the perception, thought processes and understanding of the user",
+      "options": [
+        "Standard Biometrics",
+        "Cognitive Biometrics",
+        "Intelligent Biometrics",
+        "Behavioural Biometrics"
+      ]
+    },
+    "25": {
+      "question": "Hybrid Attack is",
+      "options": [
+        "A brute force attack that uses special tables",
+        "An attack that uses both automated and user input",
+        "An attack that slightly alters the dictionary words",
+        "An online guessing attack"
       ]
     }
   },
   "answers": {
-    "1": "SARS-CoV-2",
-    "2": "ICTV",
-    "3": "BZK/TCS",
-    "4": "All of the above",
-    "5": "3.4%",
-    "6": "14 days",
-    "7": "A contaminated object or surface",
-    "8": "None of these",
-    "9": "via small respiratory droplets through sneezing, coughing, or when people interact with each other for some time in close proximity",
-    "10": "Infrared sensors",
-    "11": "Two days prior to the onset of symptoms and the symptomatic period",
-    "12": "Supportive Care i.e help to keep the vital organ systems functioning",
-    "13": "N95 masks",
-    "14": "Metal oxide nanoparticles",
-    "15": "Artificial Intelligence",
-    "16": "Remove the mask from front in case of talking to someone",
-    "17": "The spread becomes uncontrollable and major clusters of infection are formed.",
-    "18": "Reverse Transcription Polymerase Chain Reaction",
-    "19": "The number of cases, on average, an infected person will cause during their infectious period.",
-    "20": "Bats"
+    "1": "VR",
+    "2": "IMMERSIVE",
+    "3": "CAVE",
+    "4": "NON IMMERSIVE",
+    "5": "Interactivity",
+    "6": "Head Mounted Display",
+    "7": "Mixed reality",
+    "8": "SEMI IMMERSIVE",
+    "9": "Binocular Omni-Orientation Monitor",
+    "10": "Motion Trackers",
+    "11": "Flux Capacitors",
+    "12": "a transaction and block verification protocol",
+    "13": "Fork",
+    "14": "Sathoshi Nakamoto",
+    "15": "Machine to Machine and Internet of Things connectivity",
+    "16": "Long Term Evolution",
+    "17": "NASA",
+    "18": "Mixed Reality",
+    "19": "Solitaire",
+    "20": "Technology that overlays digital information on top of real-world items",
+    "21": "Pokémon Go",
+    "22": "Provides cryptographic services in hardware instead of software",
+    "23": "Access Control List (ACL)",
+    "24": "Cognitive Biometrics",
+    "25": "An attack that slightly alters the dictionary words"
   }
 }
