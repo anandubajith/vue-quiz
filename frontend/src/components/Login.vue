@@ -1,7 +1,7 @@
 <template>
   <div class="login" @submit.prevent="recaptcha">
     <h1>Corona Quiz</h1>
-    <p>Please note that this is a timed quiz. You will get 5 min to attempt 20 questions. Enter the following details. You will be mailed with your score and answers later.</p>
+    <p>Please note that this is a timed quiz. You will get 10 mins to attempt 25 questions. Enter the following details. You will be mailed with your score and answers later.</p>
     <form autocomplete="off" >
       <input type="text" v-model="name" placeholder="name" autocomplete="off" required/>
       <input type="email" v-model="email" placeholder="email" autocomplete="off" required/>
