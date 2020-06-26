@@ -221,7 +221,7 @@ export default {
       success: false,
       questionId: null,
       response: {},
-      loading: true,
+      loading: false,
       quizActive: true,
     };
   },

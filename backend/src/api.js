@@ -23,7 +23,7 @@ router.post('/register', [
   check('name').isString(),
   check('email').isEmail().normalizeEmail(),
   check('phone').isLength({ min: 9, max: 13 }),
-  check('token').isString(),
+  // check('token').isString(),
   check('member').isBoolean()
 ], async (req, res) => {
   // validate the request
