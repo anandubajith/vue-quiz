@@ -103,6 +103,7 @@ button {
   color:#8a93b9;
   padding: 4px;
   font-size: small;
+  font-weight: bold;
   display:inline-block;
   background: #313a61;
   /* border: 1px solid #8a93b9; */
