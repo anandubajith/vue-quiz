@@ -105,7 +105,7 @@ button {
   font-size: small;
   display:inline-block;
   background: #313a61;
-  border: 1px solid #8a93b9;
+  /* border: 1px solid #8a93b9; */
   margin-bottom: 1.5rem;
 }
 </style>
