@@ -39,6 +39,9 @@ router.post('/register', [
 
     let verifyRequest = await fetch(verifyUrl, { method: 'POST' });
     let verifyResponse = await verifyRequest.json();
+    if ( !verifyResponse.success) {
+      throw new Error('Invalid captcha');
+    }
 
     // store the details in DB
     await db.query('INSERT INTO participants(name,email,phone,member,created_at, spam_score) VALUES($1, $2, $3, $4,NOW(), $5)',

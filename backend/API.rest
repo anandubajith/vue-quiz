@@ -5,8 +5,9 @@ Content-Type: application/json
 
 {
   "name": "Anandu B Ajith",
-  "email": "mail21211@anandu.net",
-  "phone": "+919497389759",
+  "email": "asdddad@anandu.net",
+  "phone": "9497389759",
+  "token": "123aaa",
   "member": true
 }
 
