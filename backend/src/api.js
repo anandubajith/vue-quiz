@@ -35,18 +35,18 @@ router.post('/register', [
   try {
 
     // check the recaptchav3 token
-    const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SITE_KEY}&response=${req.body.token}`;
-
-    let verifyRequest = await fetch(verifyUrl, { method: 'POST' });
-    let verifyResponse = await verifyRequest.json();
-    console.log(verifyResponse);
-    if ( !verifyResponse.success) {
-      throw new Error('Invalid captcha');
-    }
+    // TODO: THis is taking too long
+    // const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SITE_KEY}&response=${req.body.token}`;
+    // let verifyRequest = await fetch(verifyUrl, { method: 'POST' });
+    // let verifyResponse = await verifyRequest.json();
+    // console.log(verifyResponse);
+    // if ( !verifyResponse.success) {
+    //   throw new Error('Invalid captcha');
+    // }
 
     // store the details in DB
     await db.query('INSERT INTO participants(name,email,phone,member,created_at, spam_score) VALUES($1, $2, $3, $4,NOW(), $5)',
-      [req.body.name, req.body.email, req.body.phone, req.body.member, verifyResponse.score]);
+      [req.body.name, req.body.email, req.body.phone, req.body.member, 1]);
     
     // generate a token with 6min expiry and send it
     const data = {

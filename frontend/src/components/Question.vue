@@ -5,6 +5,7 @@
       <span>/25</span>
     </header>
     <h1>{{question.question }}</h1>
+    <div class="tag">{{ question.tag || "aaa"}}</div>
     <div v-if="question.options.length == 0">
       <input type="text" v-model="answer" placeholder="Enter your answer here" />
       <button @click="submitAnswer">Save</button>
