@@ -7,7 +7,8 @@
         "VR",
         "HMD",
         "AR"
-      ]
+      ],
+      "tag": "AR/VR"
     },
     "2": {
       "question": "A type of VR environment in which subjects are visually isolated from the real environment.",
@@ -16,7 +17,8 @@
         "SEMI IMMERSIVE",
         "AUGMENTED",
         "NON IMMERSIVE"
-      ]
+      ],
+      "tag": "AR/VR"
     },
     "3": {
       "question": "A term for Illusion of immersion by projecting stereo images on the walls and floor of a room.",
@@ -25,7 +27,8 @@
         "BOOM",
         "GUI",
         "HMD"
-      ]
+      ],
+      "tag": "AR/VR"
     },
     "4": {
       "question": "In this type of VR environment, the three-dimensional scene is considered as a part of the physical environment.",
@@ -34,7 +37,8 @@
         "SEMI IMMERSIVE",
         "AUGMENTED",
         "NON IMMERSIVE"
-      ]
+      ],
+      "tag": "AR/VR"
     },
     "5": {
       "question": "A term to describe the extent to which a user can modify form and content of a mediated environment.",
@@ -43,7 +47,8 @@
         "Richness",
         "Interactivity",
         "Mapping"
-      ]
+      ],
+      "tag": "AR/VR"
     },
     "6": {
       "question": "HMD stands for?",
@@ -52,7 +57,8 @@
         "Head Mounted Detection",
         "Head Made Display",
         "Head Masked Display"
-      ]
+      ],
+      "tag": "AR/VR"
     },
     "7": {
       "question": "In immersive technology, what does MR stand for?",
@@ -61,7 +67,8 @@
         "Measured reality",
         "Mirrored reality",
         "Meta reality"
-      ]
+      ],
+      "tag": "AR/VR"
     },
     "8": {
       "question": "In this type of VR environment, the subjects can perform both in the real and virtual environment.",
@@ -70,7 +77,8 @@
         "SEMI IMMERSIVE",
         "AUGMENTED",
         "NON IMMERSIVE"
-      ]
+      ],
+      "tag": "AR/VR"
     },
     "9": {
       "question": "BOOM stands for?",
@@ -79,7 +87,8 @@
         "Binary Omni-Orientation Manager",
         "Binocular Omni-Orientation Monitor",
         "Binary Omni-Orientation Monitor"
-      ]
+      ],
+      "tag": "AR/VR"
     },
     "10": {
       "question": "_____ keep track of position.",
@@ -88,7 +97,8 @@
         "Motion Trackers",
         "HMD",
         "SMD"
-      ]
+      ],
+      "tag": "AR/VR"
     },
     "11": {
       "question": "The nation’s power grid is currently undergoing s major transformation. Which of these is not a new technology being used on the grid?",
@@ -97,7 +107,8 @@
         "Energy Storage",
         "Smart meters",
         "Flux Capacitors"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "12": {
       "question": "Proof of Stake in Blockchain is _____",
@@ -106,7 +117,8 @@
         "A password needed to access an exchange",
         "How private keys are made",
         "A transaction and block verification protocol "
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "13": {
       "question": "What is the term when a blockchain splits?",
@@ -115,7 +127,8 @@
         "Merger",
         "Sidechain",
         "Division"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "14": {
       "question": "Who created Bitcoin?",
@@ -124,7 +137,8 @@
         "Dave Kleiman",
         "Craig Wright",
         "John Mcafee"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "15": {
       "question": "MQTT is _____ protocol.",
@@ -133,7 +147,8 @@
         "Internet of Things",
         "Machine to Machine and Internet of Things connectivity",
         "Machine Things"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "16": {
       "question": "In the context of 4G wireless technology, LTE stands for",
@@ -142,7 +157,8 @@
         "Long Term Evolution",
         "Light Transmitter Emitter",
         "Light Technology Era"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "17": {
       "question": "Which among the following used Augmented Reality as a navigation tool in 1990s?",
@@ -151,7 +167,8 @@
         "British Royal Navy",
         "United State Air Force",
         "MI6"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "18": {
       "question": "In immersive technology, what does MR stand for?",
@@ -160,7 +177,8 @@
         "Measured Reality",
         "Micro Reality",
         "Mirrored Reality"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "19": {
       "question": "What popular game was intended to increase mouse proficiency?",
@@ -169,7 +187,8 @@
         "Mario",
         "Pinball",
         "Minecraft"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "20": {
       "question": "Which definition best fits Augmented Reality?",
@@ -178,7 +197,8 @@
         "Technology that overlays digital information on top of real-world items",
         "Technology that completely immerses users in a new digital environment",
         "Technology that can achieve a human level understanding of images"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "21": {
       "question": "A game based on which animated franchise propelled AR into the mainstream in these years",
@@ -187,7 +207,8 @@
         "Super Mario",
         "Legend of Zelda",
         "Sonic the Hedgehog"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "22": {
       "question": "The Trusted Platform Module (TPM)",
@@ -196,7 +217,8 @@
         "Includes a Pseudorandom Number Generator (PRNG)",
         "Allows the user to boot a corrupted disk and repair it",
         "Is available in Windows computers running BitLocker"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "23": {
       "question": "With respect to computer file system, a set of permissions attached to an object is",
@@ -205,7 +227,8 @@
         "Object Modifier",
         "Access Control List (ACL)",
         "Security Entry Designator"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "24": {
       "question": "Biometrics related to the perception, thought processes and understanding of the user",
@@ -214,7 +237,8 @@
         "Cognitive Biometrics",
         "Intelligent Biometrics",
         "Behavioural Biometrics"
-      ]
+      ],
+      "tag": "New Technologies"
     },
     "25": {
       "question": "Hybrid Attack is",
@@ -223,7 +247,8 @@
         "An attack that uses both automated and user input",
         "An attack that slightly alters the dictionary words",
         "An online guessing attack"
-      ]
+      ],
+      "tag": "New Technologies"
     }
   },
   "answers": {
