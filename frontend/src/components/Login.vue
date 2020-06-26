@@ -144,7 +144,7 @@ export default {
       if ( !this.validate() ) {
         return;
       }
-      fetch("http://localhost:5000/api/register", {
+      fetch("https://quiz-nitcieee.herokuapp.com/api/register", {
         method: "POST",
         headers: {
           Accept: "application/json",

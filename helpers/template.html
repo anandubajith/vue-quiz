@@ -90,6 +90,16 @@
                         <h2 class="aligncenter" style="font-family: 'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif; box-sizing: border-box; font-size: 24px; color: #fff; line-height: 1.2em; font-weight: 400; text-align: center; margin: 40px 0 0;" align="center">You have scored {{ correctCount }}/20.</h2>
                         <p>You shall a receive a certificate once college reopens.<br>
                         Further details will be announced by mail.</p>
+                      {% elif correctCount == 18 %}
+                        <h1 class="aligncenter" style="font-family: 'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif; box-sizing: border-box; font-size: 32px; color: #fff; line-height: 1.2em; font-weight: 500; text-align: center; margin: 40px 0 0;" align="center">Congratulations !</h1>
+                        <h2 class="aligncenter" style="font-family: 'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif; box-sizing: border-box; font-size: 24px; color: #fff; line-height: 1.2em; font-weight: 400; text-align: center; margin: 40px 0 0;" align="center">You have scored {{ correctCount }}/20.</h2>
+                        <p>You shall a receive a certificate once college reopens.<br>
+                        Further details will be announced by mail.</p>
+                      {% elif correctCount == 16 %}
+                        <h1 class="aligncenter" style="font-family: 'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif; box-sizing: border-box; font-size: 32px; color: #fff; line-height: 1.2em; font-weight: 500; text-align: center; margin: 40px 0 0;" align="center">Congratulations !</h1>
+                        <h2 class="aligncenter" style="font-family: 'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif; box-sizing: border-box; font-size: 24px; color: #fff; line-height: 1.2em; font-weight: 400; text-align: center; margin: 40px 0 0;" align="center">You have scored {{ correctCount }}/20.</h2>
+                        <p>You shall a receive a certificate once college reopens.<br>
+                        Further details will be announced by mail.</p>
                       {% else %}
                         <h2 class="aligncenter" style="font-family: 'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif; box-sizing: border-box; font-size: 24px; color: #fff; line-height: 1.2em; font-weight: 400; text-align: center; margin: 40px 0 0;" align="center">You got {{ correctCount }}/20 correct.</h2>
                       {%endif%}
