@@ -7,5 +7,6 @@ CREATE TABLE participants (
   member boolean,
   response json ,
   score int,
+  spam_score real,
   submitted_at timestamp
 );

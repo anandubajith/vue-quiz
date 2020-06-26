@@ -1,11 +1,13 @@
 const jwt = require('jsonwebtoken');
 const express = require('express');
 const { check, validationResult } = require('express-validator');
+const fetch = require("node-fetch");
 require('dotenv').config();
 const db = require('./db');
 const { isAuth } = require('./middlewares');
 
 const questions = require('./questions.json');
+const { response } = require('express');
 
 const normalize = (str) => {
   if (str == null) {
@@ -21,36 +23,44 @@ router.post('/register', [
   check('name').isString(),
   check('email').isEmail().normalizeEmail(),
   check('phone').isLength({ min: 9, max: 13 }),
+  check('token').isString(),
   check('member').isBoolean()
-], (req, res) => {
+], async (req, res) => {
   // validate the request
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(422).json({ errors: errors.array() });
   }
-  // store the details in DB
 
-  db.query('INSERT INTO participants(name,email,phone,member,created_at) VALUES($1, $2, $3, $4,NOW())',
-    [req.body.name, req.body.email, req.body.phone, req.body.member],
-    (error, results) => {
-      if (error) {
-        if (error.code === '23505') {
-          return res.status(409).send('already registered');
-        }
-        console.log(error);
-        return res.status(500).send('error occoured');
-      }
+  try {
 
-      // generate a token with 6min expiry and send it
-      const data = {
-        name: req.body.name,
-        email: req.body.email
-      };
-      const expiration = '6min';
-      const token = jwt.sign(data, process.env.SECRET, { expiresIn: expiration });
-      // do shuffling of questions, options
-      res.json({ questions: questions.questions, token });
-    });
+    // check the recaptchav3 token
+    const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SITE_KEY}&response=${req.body.token}`;
+
+    let verifyRequest = await fetch(verifyUrl, { method: 'POST' });
+    let verifyResponse = await verifyRequest.json();
+
+    // store the details in DB
+    await db.query('INSERT INTO participants(name,email,phone,member,created_at, spam_score) VALUES($1, $2, $3, $4,NOW())',
+      [req.body.name, req.body.email, req.body.phone, req.body.member, verifyResponse.score]);
+    
+    // generate a token with 6min expiry and send it
+    const data = {
+      name: req.body.name,
+      email: req.body.email
+    };
+    const expiration = '6min';
+    const token = jwt.sign(data, process.env.SECRET, { expiresIn: expiration });
+    // do shuffling of questions, options
+    res.json({ questions: questions.questions, token });
+
+  } catch (error) {
+    if (error.code === '23505') {
+      return res.status(409).send('already registered');
+    }
+    console.log(error);
+    return res.status(500).send('error occoured');
+  }
 });
 
 router.post('/submit', isAuth, (req, res) => {
