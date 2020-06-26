@@ -98,6 +98,11 @@ input {
 button {
   margin-bottom: 2rem;
 }
+.tag {
+  border-radius: 4px;
+  font-size: small;
+  background: red;
+}
 </style>
 <script>
 export default {

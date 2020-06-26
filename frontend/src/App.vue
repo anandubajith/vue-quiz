@@ -225,9 +225,9 @@ export default {
       quizActive: true,
     };
   },
-  mounted() {
-    this.$recaptchaLoaded().then(() => this.loading = false)
-  },
+  // mounted() {
+  //   this.$recaptchaLoaded().then(() => this.loading = false)
+  // },
   methods: {
     onLogin(token, questions) {
       this.loading = false;

@@ -1,5 +1,5 @@
 <template>
-  <div class="login" @submit.prevent="recaptcha">
+  <div class="login" @submit.prevent="doLogin">
     <h1>Some Quiz</h1>
     <p>
       Please note that this is a timed quiz. You will get 10 mins to attempt 25 questions. Enter the following details. You will be mailed with your score and answers later.
@@ -112,17 +112,18 @@ export default {
     };
   },
   methods: {
-    async recaptcha() {
-      this.setLoading(true);
-      await this.$recaptchaLoaded();
-      // Execute reCAPTCHA with action "login".
-      this.token = await this.$recaptcha("login");
-      this.doLogin();
-    },
+    // async recaptcha() {
+    //   this.setLoading(true);
+    //   await this.$recaptchaLoaded();
+    //   // Execute reCAPTCHA with action "login".
+    //   this.token = await this.$recaptcha("login");
+    //   this.doLogin();
+    // },
     doLogin() {
       if (!this.validate()) {
         return;
       }
+      this.setLoading(true);
       fetch("https://quiz-nitcieee.herokuapp.com/api/register", {
         method: "POST",
         headers: {
