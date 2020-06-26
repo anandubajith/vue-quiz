@@ -55,7 +55,7 @@ h1 {
   color: #fff;
   font-size: 2rem;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.25rem;
   font-weight: bold;
   user-select: none;
 }
@@ -99,9 +99,14 @@ button {
   margin-bottom: 2rem;
 }
 .tag {
-  border-radius: 4px;
+  border-radius: 5px;
+  color:#8a93b9;
+  padding: 4px;
   font-size: small;
-  background: red;
+  display:inline-block;
+  background: #313a61;
+  border: 1px solid #8a93b9;
+  margin-bottom: 1.5rem;
 }
 </style>
 <script>
