@@ -16,7 +16,7 @@
       v-if="token !== null && this.count <= 20 && !this.success"
     />
     <div v-if="this.success">
-      <h1 style="margin-top:1rem">Corona Quiz</h1>
+      <h1 style="margin-top:1rem">Some Quiz</h1>
       <div class="success">
         <svg x="0px" y="0px" viewBox="0 0 512 512">
           <path
@@ -34,7 +34,7 @@
     </div>
   </div>
   <div style="text-align:center" v-else>
-      <h1 style="margin-top:1rem">Corona Quiz</h1>
+      <h1 style="margin-top:1rem">Some Quiz</h1>
       <p style="font-size:1.25rem; color:#fff"> The quiz is over now </p>
   </div>
   </div>

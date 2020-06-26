@@ -1,6 +1,6 @@
 <template>
   <div class="login" @submit.prevent="recaptcha">
-    <h1>Corona Quiz</h1>
+    <h1>Some Quiz</h1>
     <p>
       Please note that this is a timed quiz. You will get 10 mins to attempt 25 questions. Enter the following details. You will be mailed with your score and answers later.
       <br />
@@ -23,11 +23,11 @@
       <div class="radio-outer">
         <label for="member" style="flex:1">Are you an IEEE Member?</label>
         <div class="radio-inner">
-          <input type="radio" v-model="member" value="yes" id="yes" name="member" />
+          <input type="radio" v-model="member" value="yes" id="yes" name="member" required/>
           <label for="yes">Yes</label>
         </div>
         <div class="radio-inner">
-          <input type="radio" v-model="member" value="no" id="no" name="member" />
+          <input type="radio" v-model="member" value="no" id="no" name="member" required/>
           <label for="no">No</label>
         </div>
       </div>
