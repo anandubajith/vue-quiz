@@ -54,7 +54,7 @@ export default {
   },
   data() {
     return {
-      time: 300,
+      time: 600,
       timer: null
     };
   },
@@ -83,7 +83,7 @@ export default {
   },
   computed: {
     width() {
-      return this.time / 3;
+      return this.time / 6;
     }
   },
   methods: {
