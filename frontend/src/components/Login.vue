@@ -94,6 +94,13 @@ p {
   margin-right: 0.25rem;
   width: auto;
 }
+input[type=radio] {
+    border: 0px;
+    min-width: 1.5em;
+    height: 1.5em;
+    width: 100%;
+}
+
 </style>
 <script>
 export default {
