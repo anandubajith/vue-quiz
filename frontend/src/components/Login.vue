@@ -139,8 +139,6 @@ export default {
       // Execute reCAPTCHA with action "login".
       this.token  = await this.$recaptcha('login');
       this.doLogin();
- 
-      // Do stuff with the received token.
     },
     doLogin() {
       if ( !this.validate() ) {
