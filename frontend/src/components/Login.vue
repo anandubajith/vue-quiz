@@ -1,27 +1,35 @@
 <template>
   <div class="login" @submit.prevent="recaptcha">
     <h1>Corona Quiz</h1>
-    <p>Please note that this is a timed quiz. You will get 10 mins to attempt 25 questions. Enter the following details. You will be mailed with your score and answers later.<br>
-    <span style="color:gold;font-weight:bold;font-size:medium">Note: Only NIT-Cians are eligible for prizes</span>
-
+    <p>
+      Please note that this is a timed quiz. You will get 10 mins to attempt 25 questions. Enter the following details. You will be mailed with your score and answers later.
+      <br />
+      <span
+        style="color:gold;font-weight:bold;font-size:medium"
+      >Note: Only NIT-Cians are eligible for prizes</span>
     </p>
-    
-    <form autocomplete="off" >
-      <input type="text" v-model="name" placeholder="name" autocomplete="off" required/>
-      <input type="email" v-model="email" placeholder="email" autocomplete="off" required/>
-      <input type="text" v-model="phone" inputmode="numeric" autocomplete="off" pattern="[0-9]*"  placeholder="phone" />
+
+    <form autocomplete="off2">
+      <input type="text" v-model="name" placeholder="name" autocomplete="off" required />
+      <input type="email" v-model="email" placeholder="email" autocomplete="off" required />
+      <input
+        type="text"
+        v-model="phone"
+        inputmode="numeric"
+        autocomplete="off"
+        pattern="[0-9]*"
+        placeholder="phone"
+      />
       <div class="check">
-        <input type="checkbox" v-model="member" id="member"><label for="member">I am an IEEE member</label>
+        <input type="checkbox" v-model="member" id="member" />
+        <label for="member">I am an IEEE member</label>
       </div>
-      <button type="submit" >Start Quiz</button>
+      <button type="submit">Start Quiz</button>
     </form>
-    <div v-if="error" class="errors">
-      {{ error }}
-    </div>
+    <div v-if="error" class="errors">{{ error }}</div>
   </div>
 </template>
 <style scoped>
-
 button {
   margin-top: 2rem;
 }
@@ -44,13 +52,13 @@ input {
   text-align: center;
   border-radius: 20px;
   font-weight: bold;
-  color:#fff;
+  color: #fff;
 }
 .danger {
   border: red;
 }
 h1 {
-  color:#fff;
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 p {
@@ -59,7 +67,7 @@ p {
   margin-bottom: 1rem;
 }
 .check {
-  font-size:1.25rem;
+  font-size: 1.25rem;
   text-align: center;
   color: #959ec5;
   margin: 0.25rem 0;
@@ -106,14 +114,14 @@ input[type="radio"]:checked + label::before {
   border-color: #fff;
 }
 input[type="checkbox"] + label::after,
-input[type=radio] + label::after {
+input[type="radio"] + label::after {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   -o-transform: scale(0);
   transform: scale(0);
 }
 input[type="checkbox"]:checked + label::after,
-input[type=radio]:checked + label::after {
+input[type="radio"]:checked + label::after {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
@@ -125,7 +133,7 @@ export default {
   name: "Login",
   props: {
     onLogin: Function,
-    setLoading: Function,
+    setLoading: Function
   },
   data() {
     return {
@@ -133,19 +141,19 @@ export default {
       email: null,
       phone: null,
       error: null,
-      member: false,
+      member: false
     };
   },
   methods: {
     async recaptcha() {
       this.setLoading(true);
-      await this.$recaptchaLoaded()
+      await this.$recaptchaLoaded();
       // Execute reCAPTCHA with action "login".
-      this.token  = await this.$recaptcha('login');
+      this.token = await this.$recaptcha("login");
       this.doLogin();
     },
     doLogin() {
-      if ( !this.validate() ) {
+      if (!this.validate()) {
         return;
       }
       fetch("https://quiz-nitcieee.herokuapp.com/api/register", {
@@ -166,7 +174,9 @@ export default {
           if (response.ok) {
             return response.json();
           } else {
-            return response.text().then(text => {throw new Error(text)})
+            return response.text().then(text => {
+              throw new Error(text);
+            });
           }
         })
         .then(res => {
@@ -175,19 +185,23 @@ export default {
         .catch(() => {
           // display errros
           this.setLoading(false);
-          this.error = 'Error: Invalid details';
+          this.error = "Error: Invalid details";
         });
     },
     validate() {
-      if ( typeof this.name !== 'string' || this.name.length == 0 ) {
+      if (typeof this.name !== "string" || this.name.length == 0) {
         alert("Please enter name");
         return false;
       }
-      if ( typeof this.email != 'string' ) {
+      if (typeof this.email != "string") {
         alert("Please enter valid email");
         return false;
       }
-      if (this.phone == null || !(/^\d+$/.test(this.phone)) || this.phone.length != 10) {
+      if (
+        this.phone == null ||
+        !/^\d+$/.test(this.phone) ||
+        this.phone.length != 10
+      ) {
         alert("Please enter valid phone number 10 digit phone number");
         return false;
       }
