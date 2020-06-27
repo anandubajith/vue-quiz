@@ -47,7 +47,7 @@ router.post('/register', [
     // store the details in DB
     await db.query('INSERT INTO participants(name,email,phone,member,created_at, spam_score) VALUES($1, $2, $3, $4,NOW(), $5)',
       [req.body.name, req.body.email, req.body.phone, req.body.member, 1]);
-    
+
     // generate a token with 6min expiry and send it
     const data = {
       name: req.body.name,
@@ -86,5 +86,22 @@ router.post('/submit', isAuth, (req, res) => {
       res.status(200).send({ message: 'Success' });
     });
 });
+
+router.get('/stats', async (req, res) => {
+  try {
+    const totalParticipants = await db.query('SELECT COUNT(*) FROM participants;');
+    const totalSubmissions = await db.query('SELECT COUNT(*) FROM participants WHERE score IS NOT NULL;');
+    const ieeeMembers = await db.query('SELECT COUNT(*) FROM participants WHERE member=true;');
+    const highestScore = await db.query('SELECT score FROM participants WHERE score IS NOT NULL ORDER BY score DESC LIMIT 1')
+
+    return res.json({
+      totalParticipants,totalSubmissions,ieeeMembers,highestScore
+    });
+
+  } catch (e) {
+    console.error(e);
+    return res.status(500).send('error occoured');
+  }
+})
 
 module.exports = router;
