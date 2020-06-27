@@ -124,7 +124,7 @@ body {
 }
 h1 {
   color: #868fb4;
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: bold;
   margin: 0;
   margin-bottom: 1rem;
