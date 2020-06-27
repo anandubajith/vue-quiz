@@ -1,6 +1,6 @@
 <template>
   <div class="login" @submit.prevent="doLogin">
-    <h1>Some Quiz</h1>
+    <h1>TechUp Lockdown</h1>
     <p>
       Please note that this is a timed quiz. You will get 10 mins to attempt 25 questions. Enter the following details. You will be mailed with your score and answers later.
       <br />
