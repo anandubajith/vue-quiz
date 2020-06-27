@@ -89,10 +89,10 @@ router.post('/submit', isAuth, (req, res) => {
 
 router.get('/stats', async (req, res) => {
   try {
-    const totalParticipants = await db.query('SELECT COUNT(*) FROM participants;');
-    const totalSubmissions = await db.query('SELECT COUNT(*) FROM participants WHERE score IS NOT NULL;');
-    const ieeeMembers = await db.query('SELECT COUNT(*) FROM participants WHERE member=true;');
-    const highestScore = await db.query('SELECT score FROM participants WHERE score IS NOT NULL ORDER BY score DESC LIMIT 1')
+    const totalParticipants = await (await db.query('SELECT COUNT(*) FROM participants;')).rows.count;
+    const totalSubmissions = await (await db.query('SELECT COUNT(*) FROM participants WHERE score IS NOT NULL;')).rows.count;
+    const ieeeMembers = await (await db.query('SELECT COUNT(*) FROM participants WHERE member=true;')).rows.count;
+    const highestScore = await (await db.query('SELECT score FROM participants WHERE score IS NOT NULL ORDER BY score DESC LIMIT 1')).rows.count
 
     return res.json({
       totalParticipants ,totalSubmissions,ieeeMembers,highestScore
