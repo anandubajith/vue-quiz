@@ -1,0 +1,131 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+blockquote,
+body,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: 400;
+}
+ul {
+	list-style: none;
+}
+button,
+input,
+select,
+textarea {
+	margin: 0;
+}
+html {
+	box-sizing: border-box;
+}
+*,
+:after,
+:before {
+	box-sizing: inherit;
+}
+img,
+video {
+	height: auto;
+	max-width: 100%;
+}
+iframe {
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td,
+th {
+	padding: 0;
+}
+td:not([align]),
+th:not([align]) {
+	text-align: left;
+}
+body {
+	padding: 0.5rem;
+	background: #252c4a;
+	max-width: 500px;
+	margin: auto;
+	font-family: Nunito, sans-serif;
+}
+h1 {
+	color: #868fb4;
+	font-size: 3rem;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+button,
+h1 {
+	font-weight: 700;
+}
+button {
+	display: block;
+	outline: 0;
+	margin: auto;
+	background: #258aec;
+	color: #fff;
+	padding: 1rem 1.5rem;
+	border-radius: 25px;
+	cursor: pointer;
+	font-size: 1.25rem;
+	border: 0;
+}
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #252c4a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.success {
+	margin: 1rem 0;
+	margin-top: 2rem;
+	background: #00d565;
+	font-size: 2rem;
+	padding: 2rem 1rem;
+	text-align: center;
+	border-radius: 20px;
+	font-weight: 700;
+	color: #fff;
+}
+.success svg {
+	max-width: 10rem;
+	display: block;
+	margin: auto;
+	fill: #fff;
+	margin-bottom: 1rem;
+}

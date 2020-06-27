@@ -1,0 +1,7 @@
+main.svelte-77hpun{display:grid;width:100%;gap:1em;grid-template-columns:1fr 1fr;grid-template-rows:auto;grid-template-areas:"header header"
+      "stat1 stat2"
+      "stat3 stat4"
+      "date date"}header.svelte-77hpun{grid-area:header}.date.svelte-77hpun{grid-area:date;color:#8a93b9}
+.stat.svelte-1pkqq6b{display:block;background:#313a61;padding:1em;border-radius:5px}.title.svelte-1pkqq6b{color:#8a93b9;font-size:1.25rem;margin:0}.value.svelte-1pkqq6b{color:gold;font-size:2rem;font-weight:700}
+
+/*# sourceMappingURL=bundle.css.map */
