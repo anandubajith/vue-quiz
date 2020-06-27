@@ -171,12 +171,10 @@
       "tag": "New Technologies"
     },
     "18": {
-      "question": "In Immersive technology, what does MR stand for?",
+      "question": "Is bitcoin legal in India?",
       "options": [
-        "Mixed Reality",
-        "Measured Reality",
-        "Micro Reality",
-        "Mirrored Reality"
+        "Yes",
+        "No"
       ],
       "tag": "New Technologies"
     },
@@ -269,7 +267,7 @@
     "15": "Machine to Machine and Internet of Things connectivity",
     "16": "Long Term Evolution",
     "17": "NASA",
-    "18": "Mixed Reality",
+    "18": "Yes",
     "19": "Solitaire",
     "20": "Technology that overlays digital information on top of real-world items",
     "21": "Pokémon Go",
