@@ -13,10 +13,10 @@
     "2": {
       "question": "A type of VR environment in which subjects are visually isolated from the real environment.",
       "options": [
-        "IMMERSIVE",
-        "SEMI IMMERSIVE",
-        "AUGMENTED",
-        "NON IMMERSIVE"
+        "Immersive",
+        "Semi Immersive",
+        "Augmented",
+        "Non Immersive"
       ],
       "tag": "AR/VR"
     },
@@ -33,10 +33,10 @@
     "4": {
       "question": "In this type of VR environment, the three-dimensional scene is considered as a part of the physical environment.",
       "options": [
-        "IMMERSIVE",
-        "SEMI IMMERSIVE",
-        "AUGMENTED",
-        "NON IMMERSIVE"
+        "Immersive",
+        "Semi Immersive",
+        "Augmented",
+        "Non Immersive"
       ],
       "tag": "AR/VR"
     },
@@ -61,7 +61,7 @@
       "tag": "AR/VR"
     },
     "7": {
-      "question": "In immersive technology, what does MR stand for?",
+      "question": "In Immersive technology, what does MR stand for?",
       "options": [
         "Mixed reality",
         "Measured reality",
@@ -73,10 +73,10 @@
     "8": {
       "question": "In this type of VR environment, the subjects can perform both in the real and virtual environment.",
       "options": [
-        "IMMERSIVE",
-        "SEMI IMMERSIVE",
-        "AUGMENTED",
-        "NON IMMERSIVE"
+        "Immersive",
+        "Semi Immersive",
+        "Augmented",
+        "Non Immersive"
       ],
       "tag": "AR/VR"
     },
@@ -116,7 +116,7 @@
         "A certificate needed to use Blockchain",
         "A password needed to access an exchange",
         "How private keys are made",
-        "A transaction and block verification protocol "
+        "A transaction and block verification protocol"
       ],
       "tag": "New Technologies"
     },
@@ -171,7 +171,7 @@
       "tag": "New Technologies"
     },
     "18": {
-      "question": "In immersive technology, what does MR stand for?",
+      "question": "In Immersive technology, what does MR stand for?",
       "options": [
         "Mixed Reality",
         "Measured Reality",
@@ -253,17 +253,17 @@
   },
   "answers": {
     "1": "VR",
-    "2": "IMMERSIVE",
+    "2": "Immersive",
     "3": "CAVE",
-    "4": "NON IMMERSIVE",
+    "4": "Non Immersive",
     "5": "Interactivity",
     "6": "Head Mounted Display",
     "7": "Mixed reality",
-    "8": "SEMI IMMERSIVE",
+    "8": "Semi Immersive",
     "9": "Binocular Omni-Orientation Monitor",
     "10": "Motion Trackers",
     "11": "Flux Capacitors",
-    "12": "a transaction and block verification protocol",
+    "12": "A transaction and block verification protocol",
     "13": "Fork",
     "14": "Sathoshi Nakamoto",
     "15": "Machine to Machine and Internet of Things connectivity",
