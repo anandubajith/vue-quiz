@@ -2,13 +2,15 @@
   <div class="login" @submit.prevent="doLogin">
     <h1>TechUp Lockdown</h1>
     <p>
+      <span
+        style="font-size:13px;font-weight:bold"
+      >Phase 2 of COMET initiative by Kerala Jt.Chapter IA/IE/PELS.</span>
       Please note that this is a timed quiz. You will get 10 mins to attempt 25 questions. Enter the following details. You will be mailed with your score and answers later.
       <br />
       <span
         style="color:gold;font-weight:bold;font-size:medium"
-      >Note: Only NIT-Cians are eligible for prizes</span><br/>
-      <span style="font-size:13px;font-weight:bold">
-      Phase 2 of COMET initiative by Kerala Jt.Chapter IA/IE/PELS.</span>
+      >Note: Only NIT-Cians are eligible for prizes</span>
+      <br />
     </p>
 
     <form autocomplete="off">
@@ -25,11 +27,11 @@
       <div class="radio-outer">
         <label for="member" style="flex:1">Are you an IEEE Member?</label>
         <div class="radio-inner">
-          <input type="radio" v-model="member" value="yes" id="yes" name="member" required/>
+          <input type="radio" v-model="member" value="yes" id="yes" name="member" required />
           <label for="yes">Yes</label>
         </div>
         <div class="radio-inner">
-          <input type="radio" v-model="member" value="no" id="no" name="member" required/>
+          <input type="radio" v-model="member" value="no" id="no" name="member" required />
           <label for="no">No</label>
         </div>
       </div>
@@ -96,13 +98,12 @@ p {
   margin-right: 0.25rem;
   width: auto;
 }
-input[type=radio] {
-    border: 0px;
-    min-width: 1.5em;
-    height: 1.5em;
-    width: 100%;
+input[type="radio"] {
+  border: 0px;
+  min-width: 1.5em;
+  height: 1.5em;
+  width: 100%;
 }
-
 </style>
 <script>
 export default {
