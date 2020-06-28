@@ -6,7 +6,9 @@
       <br />
       <span
         style="color:gold;font-weight:bold;font-size:medium"
-      >Note: Only NIT-Cians are eligible for prizes</span>
+      >Note: Only NIT-Cians are eligible for prizes</span><br/>
+      <span style="font-size:13px;font-weight:bold">
+      Phase 2 of COMET initiative by Kerala Jt.Chapter IA/IE/PELS.</span>
     </p>
 
     <form autocomplete="off">
