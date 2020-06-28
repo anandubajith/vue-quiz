@@ -1,10 +1,13 @@
 <template>
   <div class="login" @submit.prevent="doLogin">
-    <h1>TechUp Lockdown</h1>
-    <p>
+    <div class="header">
+      <h1>TechUp Lockdown</h1>
       <span
         style="font-size:13px;font-weight:bold"
       >Phase 2 of COMET initiative by Kerala Jt.Chapter IA/IE/PELS.</span>
+    </div>
+
+    <p>
       Please note that this is a timed quiz. You will get 10 mins to attempt 25 questions. Enter the following details. You will be mailed with your score and answers later.
       <br />
       <span
@@ -71,6 +74,14 @@ input {
 h1 {
   color: #fff;
   margin-bottom: 0.5rem;
+}
+.header h1 {
+  margin-bottom: 0;
+}
+.header span {
+  display: block;
+  color:#8a93b9;
+  margin-bottom: 0.5rem;;
 }
 p {
   color: #959ec5;
