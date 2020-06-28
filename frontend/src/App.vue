@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <header style="margin-top:0.5rem; margin-bottom:0.5rem;align-items:center;">
+    <header style="margin-top:0.5rem; margin-bottom:0.5rem;align-items:center;text-align:center;">
       <img src="./assets/nitc.png" style="height:50px;margin-right:0.5rem" />
       <img src="./assets/ieee.png" style="height:50px;margin-right:0.5rem" />
       <img src="./assets/ias-logo-lg.png" style="height:60px;" />
+      <img src="./assets/comet.png" style="height:60px;" />
     </header>
     <div v-if="quizActive">
     <Login v-if="token==null && !this.success" :setLoading="setLoading" :onLogin="onLogin" />
