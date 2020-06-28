@@ -92,7 +92,7 @@ router.get('/stats', async (req, res) => {
     const totalParticipants = await (await db.query('SELECT COUNT(*) FROM participants;')).rows[0].count;
     const totalSubmissions = await (await db.query('SELECT COUNT(*) FROM participants WHERE score IS NOT NULL;')).rows[0].count;
     const ieeeMembers = await (await db.query('SELECT COUNT(*) FROM participants WHERE member=true;')).rows[0].count;
-    const highestScore = await (await db.query('SELECT score FROM participants WHERE score IS NOT NULL ORDER BY score DESC LIMIT 1')).rows[0].score;
+    const highestScore = await (await db.query('SELECT MAX(score) FROM participants WHERE score IS NOT NULL')).rows[0].max;
 
     return res.json({
       totalParticipants ,totalSubmissions,ieeeMembers,highestScore
