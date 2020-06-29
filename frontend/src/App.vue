@@ -223,7 +223,7 @@ export default {
       questionId: null,
       response: {},
       loading: false,
-      quizActive: true,
+      quizActive: false,
     };
   },
   // mounted() {
